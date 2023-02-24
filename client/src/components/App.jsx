@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const App = () => {
   //
-  const closeDate = new Date(2022, 6, 15, 14, 0, 0);
+  const closeDate = new Date(2025, 6, 15, 14, 0, 0);
   //
 
   const [items, setItems] = useState([]);
