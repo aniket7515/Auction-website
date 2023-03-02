@@ -22,7 +22,7 @@ const AddItem = (props) => {
       id: newKey,
       title: item.title,
       bids: 0,
-      price: 0, //change to store in cents?
+      price: 100, //change to store in cents?
       highBidder: "",
       highBidderId: "",
       seller: props.loggedIn.username,
