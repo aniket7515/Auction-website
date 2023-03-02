@@ -66,23 +66,23 @@ const Item = (props) => {
     let increase = 0;
 
     switch (true) {
-      case price < 10:
-        increase = 1;
-        break;
-      case price < 50:
-        increase = 2;
-        break;
       case price < 100:
-        increase = 5;
-        break;
-      case price < 500:
         increase = 10;
         break;
+      case price < 500:
+        increase = 20;
+        break;
       case price < 1000:
-        increase = 25;
+        increase = 50;
+        break;
+      case price < 5000:
+        increase = 100;
         break;
       case price < 10000:
-        increase = 100;
+        increase = 250;
+        break;
+      case price < 100000:
+        increase = 1000;
         break;
       default:
         increase = 500;
@@ -104,7 +104,7 @@ const Item = (props) => {
               handleClick={left !== "Bidding Closed" ? sendBid : biddingClosed}
               name={
                 props.user.id !== props.highBidderId
-                  ? `BID $${newBid()}`
+                  ? `BID ₹${newBid()}`
                   : "WINNING"
               }
               color={
