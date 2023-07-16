@@ -57,3 +57,4 @@
 - Image placeholder for invalid photo upload
 - Listing App
 - Payment gateway (including payment method required to bid)
+- 
